@@ -1,20 +1,20 @@
 document.getElementsByTagName("button")[0].addEventListener("click",
 function() {
-  this.first = document.getElementsByTagName('div')[1];
-  this.secound = document.getElementsByTagName('div')[2];
-  this.thirt = document.getElementsByTagName('div')[3];
+  first = document.getElementsByClassName('first-circ')[0];
+  secound = document.getElementsByClassName('secound-circ')[0];
+  thirt = document.getElementsByClassName('thirt-circ')[0];
 
-  if (!this.first.classList.contains('red') && !this.secound.classList.contains('orange') && !this.thirt.classList.contains('green')) {
-    this.first.classList.add('red');
-  }else if(this.first.classList.contains('red')) {
-    this.first.classList.remove('red');
-    this.secound.classList.add('orange');
-  }else if(this.secound.classList.contains('orange')){
-    this.first.classList.remove('red');
-    this.secound.classList.remove('orange');
-    this.thirt.classList.add('green');
-  }else if(this.thirt.classList.contains('green')) {
-    this.thirt.classList.remove('green');
-    this.first.classList.add('red');
+  if (!first.classList.contains('red') && !secound.classList.contains('orange') && !thirt.classList.contains('green')) {
+    first.classList.add('red');
+  }else if(first.classList.contains('red')) {
+    first.classList.remove('red');
+    secound.classList.add('orange');
+  }else if(secound.classList.contains('orange')){
+    first.classList.remove('red');
+    secound.classList.remove('orange');
+    thirt.classList.add('green');
+  }else if(thirt.classList.contains('green')) {
+    thirt.classList.remove('green');
+    first.classList.add('red');
   }
 });
